@@ -1,0 +1,17 @@
+main: "com.gmail.akashirt53072.dicesystem.Main"
+name: "DiceSystem"
+version: "0.0.0"
+api-version: "1.16"
+commands:
+  dice: 
+    description: dice command
+    usage: "/dice <面> <回数>"
+    permission: dicesystem.normal
+permissions:
+  dicesystem.normal:
+    description: all player
+    default: true
+  dicesystem.*:
+    description: commands
+    children:
+      dicesystem.normal: true
